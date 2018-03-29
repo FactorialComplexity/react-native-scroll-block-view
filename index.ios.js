@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import { requireNativeComponent } from 'react-native';
 
 export default class ScrollBlockView extends React.Component {
@@ -8,7 +9,7 @@ export default class ScrollBlockView extends React.Component {
 }
 
 ScrollBlockView.propTypes = {
-  blocked: React.PropTypes.bool,
+  blocked: PropTypes.bool,
 };
 
 var RCTScrollBlockView = requireNativeComponent('RCTScrollBlockView', ScrollBlockView);
